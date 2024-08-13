@@ -1,0 +1,129 @@
+#header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.my-header {
+    background-color: #263238;
+    border-color: #263238;
+    border-radius: 0;
+    margin: 0;
+}
+/* 메뉴호버 */
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #304047;
+    
+}
+/* 드롭다운 메뉴 active시 */
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: #304047;
+}
+.my-logo {
+    padding: 5px 15px;
+}
+
+/* =====슬라이드===== */
+#my-slide {
+    margin-top: 51px;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+/* =========섹션========= */
+.prod-list {
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+}
+.prod-link {
+    border: 1px solid #e3e3e3;
+    display: block;
+    text-align: center;
+}
+.prod-wrap {
+    padding: 5px;
+    position: relative;
+}
+
+.prod-wrap .arrow {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    background-color: #e3e3e3;
+    color: #fff;
+}
+.prod-wrap .hover {
+    opacity: 0;
+    background-color: #76aee0;
+}
+.prod-link:hover {
+    border-color: #76aee0;
+}
+.prod-link:hover > .arrow { /* arrow는 안보이게 */
+    opacity: 0;
+}
+.prod-link:hover > span.hover {/* hover는 보이게 */
+    opacity: 1;
+}
+
+/* ====블로그 스타일 상품===== */
+@media(min-width:768px) {
+    .blog-style.col-sm-2 {
+        width: 20%;
+    }
+}
+.blog-style {
+    margin-bottom: 15px;
+}
+.blog-inner {
+    border: 1px solid #e3e3e3;
+    position: relative;
+}
+.blog-inner > img {
+    text-align: center;
+}
+.blog-content {
+    padding: 10px;
+
+}
+.blog-content > p {
+    height: 30px;
+    white-space: nowrap; /* 1줄로 처리 */
+    text-overflow: ellipsis; /* ...으로 처리 */
+    overflow: hidden;
+}
+.blog-price {overflow: hidden;}
+.blog-price > ul {float: left;}
+.blog-price > strong {float: right;}
+.blog-price > ul > li {
+    display: inline-block;
+}
+.blog-price > ul > li > i {
+    color: #ffff00;
+}
+
+.blog-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding: 10px;
+    opacity: 0;
+}
+.blog-hover > a {
+    color: #fff;
+}
+
+.blog-inner:hover > .blog-hover{
+    opacity: 1;
+}
+
